@@ -1,0 +1,847 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto&display=swap');
+:root{
+    --bg-color: #F1F5F9;
+    --card-color: #fff;
+    --message-color: #9566F1;
+    --bg-white: #fff;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.fw{
+    font-weight: 600;
+}
+.main-card-content{
+    background-color: var(--bg-color);
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+}
+.header-title h1{
+    font-weight: 700;
+    font-size: 1.88rem;
+    line-height: 1.33;
+    letter-spacing: -0.01em;
+
+}
+.header-fb{
+    display:  flex;
+    gap: 0.5rem;
+}
+.form-data{
+    position: relative;
+}
+.form-data .label-search{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+    
+
+}
+.form-control{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.form-control:focus{
+box-shadow: none !important;
+border-color: none !important;
+}
+.form-data .fa-search {
+    position: absolute;
+    top: 0px;
+    right: auto;
+    bottom: 0px;
+    left: 5px;
+    border: none;
+    background:none;
+    font-size: 20px;
+    color: gray;
+}
+.add-button .btn {
+    border: 1px solid #4347d9;
+    background: #4347d9;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+   
+}
+.add-button .btn span{
+    color: white;
+}
+.fa-plus{
+    color: gray;
+}
+.card{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+.card-header{
+    display: flex;
+    background-color: #fff;
+    border-bottom: none;
+}
+.card-images{
+    display: flex;
+}
+.image-link{
+
+    margin-right: 1.25rem;
+    position: relative;
+}
+.star-img{
+    position: absolute;
+    top: -3px;
+    right: 35px;
+    margin-right: -2.5rem;
+
+
+}
+.star-img img{
+    background: #fff;
+    height: 28px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 8px -2px #000;
+  
+
+}
+.image-link img{
+    border-radius: 50px;
+}
+
+
+.card-header-title{
+    margin-top: 0.25rem;
+    padding-right: 0.25rem;
+} 
+.card-header-title a{
+    text-decoration: none;
+}
+.card-header-title a h2{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.375;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: #000;
+}
+.text-sm{
+    font-size: 1rem;
+    line-height: 1.5715;
+  
+}
+.dropdown-option{
+    margin-top: 0.55rem;
+    padding-right: 0.25rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+.dropdown-option span{
+    font-size: 1.3rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.dropdown-option span{
+    font-size: 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+.option{
+    position: absolute;
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+     display: none;
+     min-width: 9rem;
+     padding: 5px;
+     background-color:#fff;
+     padding-bottom: 0;
+    right: 0px;
+     border-width: 1px;
+     border-radius: 0.25rem;
+}
+.dropdown-option:hover .option{
+    display: block;
+}
+.option ul li a{
+font-size: 1rem;
+font-weight: 500;
+}
+.option ul li{
+    margin-top: 0.25rem;
+    cursor: pointer;
+}
+.option ul li a:focus .option{
+    display: none;
+}
+.card-text{
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.card-text .text-sm{
+    font-size: 0.875rem;
+    line-height: 1.5715;
+}
+.card-footer{
+    background-color: #fff;
+    border: none;
+  
+}
+.footer-button{
+    border-top: 1px solid #E2E8F0;
+    width: 100%;
+    margin-left:-6px;
+    display: flex;
+   
+  
+}
+.message{
+    flex: 1 1 0%;
+    border-right:  1px solid #E2E8F0;
+   padding-right: 50px; 
+   padding-bottom: 11px;
+
+}
+.profile{
+    color: gray;
+    text-align: center;
+    padding-left: 30px;
+}
+/*************** card-tab*************/
+.card-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-tab .dropdown-option{
+ padding-left:2rem;
+}
+.card-tab .card-images{
+    padding-left: 67px;
+}
+ .message1{
+border-right: 0px;
+}
+.box{
+
+}
+/********** mobile view**************/
+@media(max-width:767px){
+    .add-button .btn span:nth-child(2){
+        display: none;
+    }
+    /* tiles ki media queries */
+    
+}
+@media(max-width:400px){
+   .image-link img{
+       border-radius: 50px;
+   }
+}
+/* meetup************/
+.nav-pills .nav-link {
+    background: var(--bg-white);
+    border: 0;
+    margin-right: 1rem;
+    font-size: 1rem;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
+    color: gray;
+}
+.meetup-text{
+    padding:1.25rem;
+}
+.meet-date{
+     color: #6366F1;
+     font-size: 1rem;
+     line-height: 1.5715;
+     font-weight: 700;
+     margin-bottom: 0.5rem;
+}
+.meet-tx{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.meet-event{
+    margin-top: .75rem;
+    justify-content: space-between;
+    display: flex;
+}
+.online-btn{
+    cursor:pointer;
+    background: var(--bg-color);
+    padding: 0.5rem;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.user{
+    border-width: 2px;
+}
+.user-number{
+    margin-left: 13px;
+    font-weight: 500;
+    color: gray;
+}
+h3{
+font-size: 1.5rem;
+
+
+}
+/* meetup-post*/
+.back-btn button{
+    background: var(--bg-white);
+    color: gray;
+  padding: 6px 13px;
+    border: 1px solid gray;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+
+}
+.back-btn span{
+   
+    font-weight: 700;
+    padding-right: 5px;
+}
+.header-text h1{
+ font-size : 2.5rem;
+ font-weight: 700;
+ letter-spacing: -0.01em;
+ margin-bottom: 0.7rem;
+}
+.host-event{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.host-image{
+    display: flex;
+    align-items: center;
+ 
+
+}
+.host-txt{
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+.host-txt:hover{
+    color: #000;
+}
+.event-online{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.online_btn{
+    cursor:pointer;
+    background: var(--bg-white);
+    padding: 0.5rem;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.free_btn{
+    background: #D1FAE5;
+    color: #3A9B6D;
+    border-radius: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.free_btn1{
+    background: #D1FAE5;
+    color: #3A9B6D;
+    border-radius: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+   border: none;
+}
+
+.meetup-detail h2{
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1rem;
+}
+.meetup-detail p{
+    margin-bottom: 1.5rem;
+}
+.meetup-pics h2{
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+}
+.horizon{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-width: 1px;
+    opacity: .1;
+}
+.meetup-comments h2{
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+}
+.c_image {
+    display: block;
+    margin-right: 0.75rem;
+}
+.c_text{
+    flex-grow: 1;
+}
+.c_head{
+    
+font-size: 1rem;
+font-weight: 600;
+color: #000;
+}
+.c_para {
+    font-style: italic;
+}
+.similar_meet h2{
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.5rem;
+}
+.fav{
+    border: 1px solid gray;
+    background: #fff;
+}
+.fav span{
+    margin-right: 5px;
+    color: #F43F5E;
+    font-weight: 700;
+}
+.btn-card button{
+    padding: 9px;
+}
+.att{
+font-weight: 600;
+font-size: 1.2rem;
+}
+.gm {
+    font-weight: 500;
+    font-size: 1.2rem;
+  
+}
+.c_name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 4px;
+} 
+.c_name span{
+    color: #000;
+    font-weight: 500;
+}
+.menu span{
+    font-size: 1.4rem;
+    padding-top: 4px;
+}
+.invite_btn .btn{
+    cursor:pointer;
+    background: #E0E7FF;
+    color: #7297F5;
+    padding: 0.2rem;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.acme-header{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    height: 4rem;
+    border-left: 0;
+    border-right: 0;
+  
+}
+.acme{
+    font-weight: 600;
+}
+.plus-button .btn{
+    background: var(--bg-white);
+    color: blue;
+  padding: 6px 13px;
+    border: 1px solid rgba(0, 0, 0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.edit-button .btn{
+    background: var(--bg-white);
+    color: gray;
+  padding: 6px 13px;
+    border: 1px solid rgba(0, 0, 0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.plus-button span{
+    color: blue;
+}
+.dropdown-menu{
+    min-width: 15rem !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    transform: translate(0px, 56px) !important;
+}
+.fb{
+    color: blue;
+}
+
+.profile-data {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid rgba(0, 0, 0,0.2); */
+    width: 70%;
+    margin-left: 20px;
+}
+.profile-data  button{
+    color: gray;
+    opacity: .5;
+   
+}
+.team-member{
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+.team-header{
+    margin-bottom: .75rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: gray;
+    opacity: 1;
+   
+    letter-spacing: .4px;
+}   
+.images{
+    margin-top: -.25rem;
+    margin-left: 1rem;
+}
+.pe-image{
+    margin-top: -4rem;
+}
+.pre-img{
+   
+    border: 4px solid #fff;
+}
+.multi-button{
+    margin-top: 6rem;
+}
+.multi-button .btn{
+   
+    padding: 6px 13px;
+
+    border: 1px solid rgba(0, 0, 0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.header-text h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.nav-tabs .nav-link.active {
+    color: blue ;
+    background-color: #fff;
+    border-color: #fff #fff blue;
+}
+.nav-tabs .nav-link:hover {
+    color: blue ;
+    background-color: #fff;
+    border-color: #fff #fff blue;
+}
+.nav-tabs .nav-link:focus {
+    color: blue ;
+    background-color: #fff;
+    border-color: #fff #fff blue;
+}
+.nav-tabs .nav-link{
+    color: gray;
+}
+.mark-btn button{
+    margin-left: 50px;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: 3px 10px 3px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.num-btn button{
+   
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: 3px 10px 3px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.num-btn button span:first-child{
+font-size: 12px;
+color: #000;
+}
+.pro-text {
+    font-size: 1.2rem;
+    color: #000;
+}
+.nav-tabs .nav-link {
+    /* margin-bottom: -1px; */
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.about-header h2{
+    font-size: 1.1rem;
+}
+.sidebar{
+    position: fixed;
+}
+.profile-image img{
+    height: 250px;
+}
+.star img{
+    background-color: #F59E0B;
+    padding: 10px;
+}
+.history{
+    display: flex;
+}
+/* feed*/
+.sidebar-button{
+    color: gray;
+    opacity: .9;
+    cursor: pointer;
+   
+}
+ .side-text{
+    padding: 10px 14px 10px;
+}
+.active{
+    background-color: #fff;
+    color:  #9395F5;
+}
+.side-text:hover{
+    background-color: #fff;
+    color:  #9395F5;
+}
+.opac{
+    color: gray;
+    opacity: .5;
+    font-size: 1rem;
+}
+.form1{
+    padding-left: 117px;
+}
+.ic{
+    color: blue;
+}
+.card-images h3{
+    font-size: 1rem
+}
+.text-gray{
+    color: gray;
+}
+.img-link{
+       margin-top: -3rem;
+    background: #5E4441;
+    height: 48px;
+    backdrop-filter: blur(8px);
+}
+.user-comment .card-images{
+    background: var(--bg-color);
+
+}
+.user-comment .card-images p{
+    font-size: 15px;
+    
+}
+.form2{
+    background: var(--bg-color);
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 400px;
+
+}
+
+.bg-card{
+    background: #F8FAFC;
+}
+/* message*****/
+.dropdown-toggle{
+    border: none;
+    background: #fff;
+    font-size: 1.2rem;
+}
+.numb{
+    background: #BEB6FB;
+    color: #fff;
+    padding: 10px;
+   height: 30px;
+   width: 30px;
+   line-height: 12px;
+    border-radius: 50px;
+    text-align: center;
+
+}
+.user-text{
+    background: #fff;
+    line-height: 3 ;
+    border-radius: 13px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  
+}
+.gb {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-left: 4.5rem;
+}
+.gk{
+   font-weight: 500;
+}
+.fg{
+    background-color:  #6366F1;
+    border-radius: 13px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.im{
+    border-radius: 13px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.comment-date{
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+/* .bottom-footer{
+    position: fixed;
+} */
+/* .message-position{
+    position: fixed;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  
+
+} */
+
+.user-message{
+    background: #fff;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  
+}
+.form3{
+    width: 700px;
+    background-color: var(--bg-color);
+}
+.add-btn{
+    background-color: #C1C1C1;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.search-form{
+    width: 96%;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    
+}
+.box{
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+/*responsive side*/
+@media(max-width:771px){
+    .card-header-title a h2{
+        font-size: 13px;
+        margin-top: 14px;
+        font-weight: 800;
+    }
+    .dropdown-option{
+        margin-top: 20px;
+    }
+    .nav-pills .nav-link {
+       
+        padding: 7px 11px 7px;
+       
+        margin-right: 7px;
+        font-size: 12px;
+       
+    }
+    .header-title h1{
+        font-size: 29px;
+    }
+.meet-date{
+    font-size:.875rem;
+}
+.header-text h1{
+    font-size: 1.8rem;
+   
+}
+.host-image{
+    margin-bottom: .5rem;
+}
+.online-btn {
+    cursor: pointer;
+    background: #F1F5F9;
+    color: #000;
+    padding: 0.4rem;
+    font-size: 13px;
+    border-radius: 50px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.pro-img{
+    display: block !important;
+}
+.sidebar{
+    position: sticky;
+}
+.multi-button {
+    margin-top: 0;
+}
+.images{
+     margin-left: 7rem;
+     margin-bottom:.5rem ;
+}
+.multi-button{
+    margin-left: 5rem;
+}
+.header-text{
+    margin-left: 4rem;
+    margin-top: 12px;
+}
+.history{
+    display: block;
+}
+}
+/* .pro-img{
+    margin-left: .;
+} */
+
+

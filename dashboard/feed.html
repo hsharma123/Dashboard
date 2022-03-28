@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./Assets/css/style.css" />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <section class="main-card-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="sidebar">
+                        <div class="header-title mb-3">
+                            <h1>Feed ✨</h1>
+                        </div>
+                        <div class="sidebar-list mb-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 sidebar-button">
+                                    <div class=" side-text active d-flex">
+                                        <div class="sidebar-icon">
+                                            <span class="fa fa-home me-2"></span>
+                                        </div>
+                                        <div class="sidebar-text">
+                                            <span class="text-sm fw">Home</span>
+                                    </div>
+                                </li>
+                                <li class=" sidebar-button mb-2">
+                                    <div class="side-text d-flex">
+                                        <div class="sidebar-icon">
+                                            <span class="fa fa-circle-o-notch me-2"></span>
+                                        </div>
+                                        <div class="sidebar-text">
+                                            <span class="text-sm fw">Explore</span>
+                                      </div>
+                                    </div>  
+                                </li>
+                                <li class=" sidebar-button mb-2">
+                                    <div class=" side-text sidebar-button d-flex">
+                                        <div class="sidebar-icon">
+                                            <span class="fa fa-bars me-2"></span>
+                                        </div>
+                                        <div class="sidebar-text">
+                                            <span class="text-sm fw">Notification</span>
+                                      </div>
+                                    </div>  
+                                </li>
+                                <li class=" sidebar-button mb-2">
+                                    <div class="side-text d-flex">
+                                        <div class="sidebar-icon">
+                                            <span class="fa fa-bookmark me-2"></span>
+                                        </div>
+                                        <div class="sidebar-text">
+                                            <span class="text-sm fw">Bookmark</span>
+                                      </div>
+                                    </div>  
+                                </li>
+                                <li class=" sidebar-button mb-2">
+                                    <div class="side-text d-flex">
+                                        <div class="sidebar-icon">
+                                            <span class="fa fa-user me-2"></span>
+                                        </div>
+                                        <div class="sidebar-text">
+                                            <span class="text-sm fw">Profile</span>
+                                      </div>
+                                    </div>  
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-header">
+                            <h3 class="text-uppercase fw opac">My Groups</h3>
+                        </div>
+                        <div class="sidebar-list mb-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2 sidebar-button">
+                                    <div class=" side-text d-flex">
+                                        <div class="sidebar-icon">
+                                            <span class="fa fa-product-hunt me-2"></span>
+                                        </div>
+                                        <div class="sidebar-text">
+                                            <span class="text-sm fw">Productive</span>
+                                    </div>
+                                </li>
+                                <li class=" sidebar-button mb-2">
+                                    <div class="side-text d-flex">
+                                        <div class="sidebar-icon">
+                                            <span class="fa fa-deviantart me-2"></span>
+                                        </div>
+                                        <div class="sidebar-text">
+                                            <span class="text-sm fw">Explore</span>
+                                      </div>
+                                    </div>  
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="user-header d-flex justify-content-around mb-3">
+                                    <div class="user-img">
+                                        <img src="./Assets/images/user-02.jpg" class="img-fluid rounded-circle" height="64" width="64">
+                                    </div>
+                                    <div class="header-form mt-2">
+                                        <form class="form-data">
+                                            <label for="action-search" class="label-search">Search</label>
+                                            <input id="action-search" class="form-control form1" type="search" placeholder="Whats happening mark?" />
+                                            <button class="fa fa-search" type="submit" aria-label="Search"></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                 <div class="icon-btn d-flex justify-content-between flex-wrap">
+                                     <div class="multi-icon d-flex justify-content-between mb-2 mt-2">
+                                         <div class="m-icon d-flex ms-4">
+                                             <div class="fa fa-medium me-2 mt-1 ic opac"></div>
+                                             <div class="icon-text">
+                                                 <span>Media</span>
+                                             </div>
+                                         </div>
+                                         <div class="m-icon d-flex ms-4">
+                                            <div class="fa fa-deviantart me-2 mt-1 ic opac"></div>
+                                            <div class="icon-text">
+                                                <span>Gif</span>
+                                            </div>
+                                        </div>
+                                        <div class="m-icon d-flex ms-4">
+                                            <div class="fa fa-meh-o me-2 mt-1 ic"></div>
+                                            <div class="icon-text">
+                                                <span>Emoji</span>
+                                            </div>
+                                        </div>
+                                     </div>
+                                     <div class="send-btn">
+                                         <button class="btn btn-primary ms-4 ms-md-0">Send <span class="fa fa-long-arrow-right"></span></button> 
+                                     </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="card-header justify-content-between">
+                                    <div class="card-images">
+                                        <a href="#" class="image-link">
+                                        
+                                            <img src="./Assets/images/user-02.jpg" class="img-fluid rounded-circle" width="64" height="64" alt="User 01" />
+                                        </a>
+                                        <div class="card-header-title">
+                                            <a href="#">
+                                                <h3 class="justify-content-center mt-2 text-black mb-0">Dominik Lamakani</h3>
+                                            </a>
+                                            <div class="d-flex align-items-center"><span class="text-gray text-sm">Yesterday at 10:48 AM</span></div>
+                                        </div> 
+                                        
+                                    </div>
+                                  
+                                    <!-- <div class="card-header-title">
+                                        <a href="#">
+                                            <h2 class="justify-content-center">Dominik Lamakani</h2>
+                                        </a>
+                                        <div class="d-flex align-items-center"><span class="text-sm me-1">-&gt;</span> <span>🇮🇹</span></div>
+                                    </div> -->
+                                    <div class="dropdown-option mt-3">
+                                        <span class="fa fa-ellipsis-h"></span>
+                                        <div class="option">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a>Option 1</a>
+                                                </li>
+                                                <li>
+                                                    <a>Option 2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-danger text-decoration-none">Remove</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-image">
+                                    <div class="text-sm">
+                                        <p>
+                                            👋
+                                        </p>
+                                        <p>
+                                            It's more likely that people reading your blog will opt in with their email addresses if you give them something highly relevant in return. 
+                                            Ditch that too-general lead magnet and create "content upgrades" for your highest-traffic articles.
+                                        </p>
+                                        <p>
+                                            Thread 👇
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="multi-icon d-flex mt-2">
+                                    <div class="m-icon d-flex ms-4">
+                                        <div class="fa fa-heart-o me-2 mt-1 "></div>
+                                        <div class="icon-text">
+                                            <span>4</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-icon d-flex ms-4">
+                                       <div class="fa fa-square-o me-2 mt-1 "></div>
+                                       <div class="icon-text">
+                                           <span>44</span>
+                                       </div>
+                                   </div>
+                                   <div class="m-icon d-flex ms-4">
+                                       <div class="fa fa-comment-o me-2 mt-1 "></div>
+                                       <div class="icon-text">
+                                           <span>7</span>
+                                       </div>
+                                   </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="card-header justify-content-between">
+                                    <div class="card-images">
+                                        <a href="#" class="image-link">
+                                        
+                                            <img src="./Assets/images/user-06.jpg" class="img-fluid rounded-circle" width="64" height="64" alt="User 01" />
+                                        </a>
+                                        <div class="card-header-title">
+                                            <a href="#">
+                                                <h3 class="justify-content-center mt-2 text-black mb-0">Mark Karimani</h3>
+                                            </a>
+                                            <div class="d-flex align-items-center"><span class="text-gray text-sm">Sponsore</span></div>
+                                        </div> 
+                                        
+                                    </div>
+                                  
+                                    <!-- <div class="card-header-title">
+                                        <a href="#">
+                                            <h2 class="justify-content-center">Dominik Lamakani</h2>
+                                        </a>
+                                        <div class="d-flex align-items-center"><span class="text-sm me-1">-&gt;</span> <span>🇮🇹</span></div>
+                                    </div> -->
+                                    <div class="dropdown-option mt-3">
+                                        <span class="fa fa-ellipsis-h"></span>
+                                        <div class="option">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a>Option 1</a>
+                                                </li>
+                                                <li>
+                                                    <a>Option 2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-danger text-decoration-none">Remove</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="card-text">
+                                    <div class="text-sm">
+                                        <p>
+                                            👋
+                                        </p>
+                                        <p>
+                                            It's more likely that people reading your blog will opt in with their email addresses if you give them something highly relevant in return. 
+                                            Ditch that too-general lead magnet and create "content upgrades" for your highest-traffic articles.
+                                        </p>
+                                        <p>
+                                            Thread 👇
+                                        </p>
+                                    </div>
+                                </div> -->
+                                <div class="card-image position-relative mb-3">
+                                    <img src="./Assets/images/feed-image-01.jpg" class="img-fluid">
+                                    <div class="position-bsolute d-flex justify-content-between img-link pt-2 pe-2 ps-2 opac">
+                                        <div class="text-white">togethernature.com</div>
+                                        <a href="#" class="text-decoration-none ">Learn More -></a>
+                                    </div>
+                                </div>
+                                <div class="multi-icon d-flex mt-2">
+                                    <div class="m-icon d-flex ms-4">
+                                        <div class="fa fa-heart-o me-2 mt-1 "></div>
+                                        <div class="icon-text">
+                                            <span>4</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-icon d-flex ms-4">
+                                       <div class="fa fa-square-o me-2 mt-1 "></div>
+                                       <div class="icon-text">
+                                           <span>44</span>
+                                       </div>
+                                   </div>
+                                   <div class="m-icon d-flex ms-4">
+                                       <div class="fa fa-comment-o me-2 mt-1 "></div>
+                                       <div class="icon-text">
+                                           <span>7</span>
+                                       </div>
+                                   </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="card-header justify-content-between">
+                                    <div class="card-images">
+                                        <a href="#" class="image-link">
+                                        
+                                            <img src="./Assets/images/user-09.jpg" class="img-fluid rounded-circle" width="64" height="64" alt="User 01" />
+                                        </a>
+                                        <div class="card-header-title">
+                                            <a href="#">
+                                                <h3 class="justify-content-center mt-2 text-black mb-0">Erica Spriggs</h3>
+                                            </a>
+                                            <div class="d-flex align-items-center"><span class="text-gray text-sm">Yesterday at 2:43 PM</span></div>
+                                        </div> 
+                                        
+                                    </div>
+                                  
+                                    <!-- <div class="card-header-title">
+                                        <a href="#">
+                                            <h2 class="justify-content-center">Dominik Lamakani</h2>
+                                        </a>
+                                        <div class="d-flex align-items-center"><span class="text-sm me-1">-&gt;</span> <span>🇮🇹</span></div>
+                                    </div> -->
+                                    <div class="dropdown-option mt-3">
+                                        <span class="fa fa-ellipsis-h"></span>
+                                        <div class="option">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a>Option 1</a>
+                                                </li>
+                                                <li>
+                                                    <a>Option 2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-danger text-decoration-none">Remove</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-sm">
+                                    <p>
+                                        Any book recommendations for a first-time entrepreneur? 📚
+                                    </p>
+                                </div>
+                                <div class="multi-icon d-flex mt-2">
+                                    <div class="m-icon d-flex ms-4">
+                                        <div class="fa fa-heart-o me-2 mt-1 "></div>
+                                        <div class="icon-text">
+                                            <span>4</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-icon d-flex ms-4">
+                                       <div class="fa fa-square-o me-2 mt-1 "></div>
+                                       <div class="icon-text">
+                                           <span>44</span>
+                                       </div>
+                                   </div>
+                                   <div class="m-icon d-flex ms-4">
+                                       <div class="fa fa-comment-o me-2 mt-1 "></div>
+                                       <div class="icon-text">
+                                           <span>7</span>
+                                       </div>
+                                   </div>
+                                </div>
+                                <hr class="horizon" />
+                                <div class="user-comment mb-3">
+                                    <div class="card-images p-3">
+                                        <a href="#" class="image-link">
+                                        
+                                            <img src="./Assets/images/user-04.jpg" class="img-fluid rounded-circle" width="32" height="32" alt="User 01" />
+                                        </a>
+                                        <div class="card-header-title">
+                                            <a href="#">
+                                                <h3 class="justify-content-center  text-black mb-0">Sophie Wenner <span class="text-gray ms-2">44 Min</span> </h3>
+                                            
+                                            </a>
+                                            <div class="d-flex align-items-center">
+                                                <p><a href="#">@Erica Sprigs</a> Reading through and really enjoying "Zero to Sold" by Arvid.</p>
+                                                
+                                            </div>
+                                        </div> 
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="user-comment mb-3">
+                                    <div class="card-images p-3">
+                                        <a href="#" class="image-link">
+                                        
+                                            <img src="./Assets/images/user-11.jpg" class="img-fluid rounded-circle" width="40" height="40" alt="User 01" />
+                                        </a>
+                                        <div class="card-header-title">
+                                            <a href="#">
+                                                <h3 class="justify-content-center  text-black mb-0">Kyla Scanlon <span class="text-gray ms-2">1 hr</span> </h3>
+                                            
+                                            </a>
+                                            <div class="d-flex align-items-center">
+                                                <p>Depends on the company you're running, but if I had to choose just one book, it'd be The Personal MBA by Josh Kaufman.</p>
+                                                
+                                            </div>
+                                        </div> 
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="user-comment mb-2">
+                                    <div class="card-images p-3">
+                                        <a href="#" class="image-link">
+                                        
+                                            <img src="./Assets/images/user-12.jpg" class="img-fluid rounded-circle" width="40" height="40" alt="User 01" />
+                                        </a>
+                                        <div class="card-header-title">
+                                            <a href="#">
+                                                <h3 class="justify-content-center  text-black mb-0">Kyla Scanlon <span class="text-gray ms-2">1 hr</span> </h3>
+                                            
+                                            </a>
+                                            <div class="d-flex align-items-center">
+                                                <p>Depends on the company you're running, but if I had to choose just one book, it'd be The Personal MBA by Josh Kaufman.</p>
+                                                
+                                            </div>
+                                        </div> 
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="d-flex justify-content-between ps-2 mb-3">
+                                    <div class="text-sm">
+                                        <span>2</span>
+                                        of
+                                        <span>67</span>
+                                    </div>
+                                    <button class="text-sm border-0 bg-white"><a href="#" class="text-decoration-none">View More Comments</a></button>
+                                </div>
+                                <div class="user-header d-flex mb-3">
+                                    <div class="user-img mt-3">
+                                        <img src="./Assets/images/user-02.jpg" class="img-fluid rounded-circle" height="32" width="32">
+                                    </div>
+                                    <div class="header-form mt-2 ms-3">
+                                        <form class="form-data">
+                                            <label for="action-search" class="label-search">Search</label>
+                                            <input id="action-search" class="form-control mt-2 form2" type="search" />
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="card-header justify-content-between">
+                                    <div class="card-images">
+                                        <a href="#" class="image-link">
+                                        
+                                            <img src="./Assets/images/user-09.jpg" class="img-fluid rounded-circle" width="64" height="64" alt="User 01" />
+                                        </a>
+                                        <div class="card-header-title">
+                                            <a href="#">
+                                                <h3 class="justify-content-center mt-2 text-black mb-0">Margaret Sullivan</h3>                                                </h3>
+                                            </a>
+                                            <div class="d-flex align-items-center"><span class="text-gray text-sm">Yesterday at 4:56 PM</span></div>
+                                        </div> 
+                                        
+                                    </div>
+                                  
+                                    <!-- <div class="card-header-title">
+                                        <a href="#">
+                                            <h2 class="justify-content-center">Dominik Lamakani</h2>
+                                        </a>
+                                        <div class="d-flex align-items-center"><span class="text-sm me-1">-&gt;</span> <span>🇮🇹</span></div>
+                                    </div> -->
+                                    <div class="dropdown-option mt-3">
+                                        <span class="fa fa-ellipsis-h"></span>
+                                        <div class="option">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a>Option 1</a>
+                                                </li>
+                                                <li>
+                                                    <a>Option 2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="text-danger text-decoration-none">Remove</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-sm">
+                                    <p>
+                                        Kyla Network - Make new connections, join communities, and access exclusive experiences. 🧑‍🤝‍🧑
+                                    </p>
+                                </div>
+                                <div class="card-image position-relative mb-3">
+                                    <img src="./Assets/images/feed-image-02.jpg" class="img-fluid">
+                                   
+                                </div>
+                                <div class="multi-icon d-flex mt-2">
+                                    <div class="m-icon d-flex ms-4">
+                                        <div class="fa fa-heart-o me-2 mt-1 "></div>
+                                        <div class="icon-text">
+                                            <span>4</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-icon d-flex ms-4">
+                                       <div class="fa fa-square-o me-2 mt-1 "></div>
+                                       <div class="icon-text">
+                                           <span>44</span>
+                                       </div>
+                                   </div>
+                                   <div class="m-icon d-flex ms-4">
+                                       <div class="fa fa-comment-o me-2 mt-1 "></div>
+                                       <div class="icon-text">
+                                           <span>7</span>
+                                       </div>
+                                   </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sidebar">
+                        <div class="header-form mt-2 mb-4">
+                            <form class="form-data">
+                                <label for="action-search" class="label-search">Search</label>
+                                <input id="action-search" class="form-control mt-2" type="search" />
+                                
+                            </form>
+                        </div>
+                        <div class="card p-3 bg-card mb-4">
+                            <div class="d-flex mb-4">
+                                <div class="text-sm att text-gray opac">TOP COMMUNITIES</div>
+                               
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/group-avatar-01.png" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">Introductions</span>
+                                            </div>
+                                        </div>
+                                        <div class="invite_btn">
+                                            <button class="btn ">join</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/group-avatar-02.png" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">HackerNews</span>
+                                            </div>
+                                        </div>
+                                        <div class="invite_btn">
+                                            <button class="btn">join</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/group-avatar-03.png" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">ReactJs</span>
+                                            </div>
+                                        </div>
+                                        <div class="invite_btn">
+                                            <button class="free_btn1"><span class="fa fa-check"></span></button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/group-avatar-04.png" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">JustChatting</span>
+                                            </div>
+                                        </div>
+                                        <div class="invite_btn">
+                                            <button class="btn">join</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn btn-light border">View All</button>
+                        </div>
+                        <div class="card p-3 bg-card">
+                            <div class="d-flex mb-4">
+                                <div class="text-sm att text-gray opac text-uppercase">Who To Follow</div>
+                               
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">Elly Boutin</span>
+                                            </div>
+                                        </div>
+                                        <div class="invite_btn">
+                                            <button class="btn ">Follow</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">Rich Harris</span>
+                                            </div>
+                                        </div>
+                                        <div class="invite_btn">
+                                            <button class="btn">Follow</button>
+                                        </div>
+                                    </div>
+                                </li>
+                               
+                                <li class="">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/user-04.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">Sullivan</span>
+                                            </div>
+                                        </div>
+                                        <div class="invite_btn">
+                                            <button class="btn">Follow</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                         
+                        </div>
+                        </div>
+                    </div>
+                </div>    
+               
+            </div>
+        </section>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

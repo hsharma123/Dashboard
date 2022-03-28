@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./Assets/css/style.css" />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <section class="">
+            <div class="container">
+                <div class="row mt-2">
+                     <div class="col-md-3 pe-0 box">
+                      
+                        <div class="market-header border-bottom border-end border-top pt-3 pb-3 pe-3 d-flex justify-content-between">
+                            <div class="d-flex justify-content-between">
+                                <div class="image-logo">
+                                    <img src="./Assets/images/Acma.png" class="me-2 rounded-circle" height="32" width="32" />
+                                </div>
+                                <div class="dropdown mt-1">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                     #marketing
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <li class="mb-2">
+                                         <div class="d-flex justify-content-between"> 
+                                          <div class="d-flex">
+                                              <div class="image-logo">
+                                                 <img src="./Assets/images/Acma.png" class="me-2 rounded-circle" height="32" width="32" />
+                                               </div> 
+                                               <div class="text mt-1">
+                                                   #marketing
+                                               </div>
+                                          </div> 
+                                          <div class="font-image mt-1">
+                                              <span class="fa fa fa-check fb"></span>
+                                          </div>
+                                          </div> 
+                                      </li>
+                                      <li class="mb-2">
+                                      
+                                         <div class="d-flex">
+                                             <div class="image-logo">
+                                                <img src="./Assets/images/Acma.png" class="me-2 rounded-circle" height="32" width="32" />
+                                              </div> 
+                                              <div class="text mt-1">
+                                                  #Developing
+                                              </div>
+                                         </div> 
+                                        
+                                        
+                                        </li>
+                                        <li class="mb-2">
+                                      
+                                            <div class="d-flex">
+                                                <div class="image-logo">
+                                                   <img src="./Assets/images/Acma.png" class="me-2 rounded-circle" height="32" width="32" />
+                                                 </div> 
+                                                 <div class="text mt-1">
+                                                     #Product Support
+                                                 </div>
+                                            </div> 
+                                           
+                                           
+                                           </li>
+                                      
+                                    </ul>
+                                  </div>
+                                
+                            </div>
+                            <div class="bg-white edit-button">
+                                <button class="btn"><span class="fa fa-pencil text-gray"></span></button>
+                            </div>
+                       </div>
+                       <div class="border-end pt-3">
+                         <div class="header-form pb-3">
+                             <form class="form-data search-form">
+                                <label for="action-search" class="label-search">Search</label>
+                                <input id="action-search" class="form-control" type="search" placeholder="Search…" />
+                                <button class="fa fa-search" type="submit" aria-label="Search"></button>
+                              </form>
+                          </div>
+                          <div class="mt-4 tabs mb-3">
+                              <ul class="nav nav-tabs">
+                                  <li class="nav-item">
+                                      <a class="nav-link active" href="#">Primary</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">Social</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#">Promotion</a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <!-- <ul class="list-unstyled pe-3">
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-around">
+                                    <div class="d-flex align-items-start flex-grow-1">
+                                        <div class="me-2 position-relative">
+                                            <img src="./Assets/images/user-08.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                        </div>
+                                        <div class="c_name">
+                                            <span class="text-sm">Carolyn McNeail</span>
+                                        </div>
+                                    </div>
+                                    <div class="numb">
+                                        <span class="text-num">2</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-around">
+                                    <div class="d-flex align-items-start flex-grow-1">
+                                        <div class="me-2 position-relative">
+                                            <img src="./Assets/images/user-01.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                        </div>
+                                        <div class="c_name">
+                                            <span class="text-sm">Dominik Lamakani</span>
+                                        </div>
+                                    </div>
+                                    <div class="numb">
+                                        <span class="text-num">4</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-around">
+                                    <div class="d-flex align-items-start flex-grow-1">
+                                        <div class="me-2 position-relative">
+                                            <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                        </div>
+                                        <div class="c_name">
+                                            <span class="text-sm">Ivan Mesaros</span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-around">
+                                    <div class="d-flex align-items-start flex-grow-1">
+                                        <div class="me-2 position-relative">
+                                            <img src="./Assets/images/user-05.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                        </div>
+                                        <div class="c_name">
+                                            <span class="text-sm">Maria Martinez</span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <span class="fa fa-check pe-2"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-around">
+                                    <div class="d-flex align-items-start flex-grow-1">
+                                        <div class="me-2 position-relative">
+                                            <img src="./Assets/images/user-06.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                        </div>
+                                        <div class="c_name">
+                                            <span class="text-sm">Adrian Przetocki</span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <span class="fa fa-check pe-2"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-around">
+                                    <div class="d-flex align-items-start flex-grow-1">
+                                        <div class="me-2 position-relative">
+                                            <img src="./Assets/images/user-07.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                        </div>
+                                        <div class="c_name">
+                                            <span class="text-sm">Adrian makaram</span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <span class="fa fa-check pe-2"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" ">
+                                <div class="d-flex justify-content-around">
+                                    <div class="d-flex align-items-start flex-grow-1">
+                                        <div class="me-2 position-relative">
+                                            <img src="./Assets/images/user-09.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                        </div>
+                                        <div class="c_name">
+                                            <span class="text-sm">Triab krien</span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <span class="fa fa-check pe-2"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> -->
+                        <div class="Direct-message">
+                            <div class="team-header text-uppercase">
+                           Inbox (44)
+                            </div>
+                            <ul class="list-unstyled pe-3">
+                              <li class="mb-3">
+                                  <div class="d-flex justify-content-around">
+                                      <div class="d-flex align-items-start flex-grow-1">
+                                          <div class="me-2 position-relative">
+                                              <img src="./Assets/images/user-08.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                          </div>
+                                          <div class="c_name">
+                                              <span class="text-sm">Carolyn McNeail</span>
+                                             
+                                          </div>
+                                      </div>
+                                      <div class="">
+                                          <span class="">4 Aug</span>
+                                      </div>
+                                  </div>
+                                  <div class="gb gk ms-5">Chill your mind with this amazing offer...</div>
+                                  <div class="gb gk ms-5 text-gray">Lorem ipsum dolor sit amet, consecte adipiscing elit aute irure dolor…</div>
+                              </li>
+                              <li class="mb-3">
+                                  <div class="d-flex justify-content-around">
+                                      <div class="d-flex align-items-start flex-grow-1">
+                                          <div class="me-2 position-relative">
+                                              <img src="./Assets/images/user-01.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                          </div>
+                                          <div class="c_name">
+                                              <span class="text-sm">Dominik Lamakani</span>
+                                          </div>
+                                      </div>
+                                      <div class="">
+                                          <span class="">1 Aug</span>
+                                      </div>
+                                       
+                                  </div>
+                                  <div class="gb gk ms-5">Chill your mind with this amazing offer.</div>
+                                  <div class="gb gk ms-5 text-gray">Lorem ipsum dolor sit amet, consecte adipiscing elit aute irure dolor…</div>
+                              </li>
+                              <li class="mb-3">
+                                  <div class="d-flex justify-content-around">
+                                      <div class="d-flex align-items-start flex-grow-1">
+                                          <div class="me-2 position-relative">
+                                              <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                          </div>
+                                          <div class="c_name">
+                                              <span class="text-sm">Ivan Mesaros</span>
+                                          </div>
+                                      </div>
+                                      <div class="">
+                                          <span class="">1 Aug</span>
+                                      </div>
+                                  </div>
+                                  <div class="gb gk ms-5">Chill your mind with this amazing offer.</div>
+                                  <div class="gb gk ms-5 text-gray">Lorem ipsum dolor sit amet, consecte adipiscing elit aute irure dolor…</div>
+                              </li>
+                              <li class="mb-3">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">Ivan Mesaros</span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="">1 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="gb gk ms-5">Chill your mind with this amazing offer.</div>
+                                    <div class="gb gk ms-5 text-gray">Lorem ipsum dolor sit amet, consecte adipiscing elit aute irure dolor…</div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">Ivan Mesaros</span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="">1 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="gb gk ms-5">Chill your mind with this amazing offer.</div>
+                                    <div class="gb gk ms-5 text-gray">Lorem ipsum dolor sit amet, consecte adipiscing elit aute irure dolor…</div>
+                                </li>
+                              <li class="mb-3">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">Ivan Mesaros</span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="">1 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="gb gk ms-5">Chill your mind with this amazing offer.</div>
+                                    <div class="gb gk ms-5 text-gray">Lorem ipsum dolor sit amet, consecte adipiscing elit aute irure dolor…</div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="d-flex align-items-start flex-grow-1">
+                                            <div class="me-2 position-relative">
+                                                <img src="./Assets/images/user-03.jpg" alt="user-1" class="img-fluid rounded-circle" height="32" width="32" />
+                                            </div>
+                                            <div class="c_name">
+                                                <span class="text-sm">Ivan Mesaros</span>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <span class="">1 Aug</span>
+                                        </div>
+                                    </div>
+                                    <div class="gb gk ms-5">Chill your mind with this amazing offer.</div>
+                                    <div class="gb gk ms-5 text-gray">Lorem ipsum dolor sit amet, consecte adipiscing elit aute irure dolor…</div>
+                                </li>
+                          </ul>
+                            
+                        </div>
+                       </div>
+                       
+                    </div>
+                    <div class="col-md-9 gx-0">
+                       
+                         <div class="d-flex align-items-center justify-content-between border-top border-bottom p-3 box"> 
+                            
+                            <div class="d-flex justify-content-between">
+                                <div class="bg-white edit-button me-2">
+                                    <button class="btn"><span class="fa fa-trash-o text-gray"></span></button>
+                                </div> 
+                                <div class="bg-white edit-button me-2">
+                                    <button class="btn"><span class="fa fa-star text-gray"></span></button>
+                                </div>
+                                <div class="bg-white edit-button me-2">
+                                    <button class="btn"><span class="fa fa-exclamation-circle text-gray"></span></button>
+                                </div>
+                                <div class="bg-white edit-button">
+                                    <button class="btn"><span class="fa fa-check fb"></span></button>
+                                </div>
+                        </div>
+                            <div class="d-flex justify-content-between">
+                                    <div class="bg-white edit-button me-2">
+                                        <button class="btn"><span class="fa fa-angle-left text-gray"></span></button>
+                                    </div>
+                                    <div class="bg-white edit-button">
+                                        <button class="btn"><span class="fa fa-angle-right  text-gray"></span></button>
+                                    </div>
+                            </div>
+                          
+                         
+                        </div>
+                        
+                        <section class="main-card-content ">
+                            <div class="user-comment d-flex">
+                                <div class="user-images">
+                                 <img src="./Assets/images/user-12.jpg" alt="user-1" class="img-fluid rounded-circle" height="50" width="50" />
+                                </div>
+                                <div class=" ms-3 user-text text-center ps-2 pe-2 mb-1">
+                                    Can anyone help? I have a question about Acme Professional
+                                </div>  
+                            </div>
+                            <div class="flex align-itmes-center mb-4 justify-content-between"> 
+                                <div class="gb gk">2:40 PM</div> 
+                            </div>
+                            <div class="user-comment mb-1 d-flex">
+                             <div class="user-images mt-2">
+                              <img src="./Assets/images/user-10.jpg" alt="user-1" class="img-fluid rounded-circle" height="50" width="50" />
+                             </div>
+                             <div class=" ms-3 fg text-white p-3 pe-5">
+                                Hey Dominik Lamakani 👋<br>
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id<br>
+                                est 🙌
+                             </div>
+                         </div>
+                         <div class="flex align-itmes-center mb-4 justify-content-between"> 
+                             <div class="gb gk">2:40 PM</div> 
+                         </div>
+                         <div class="user-comment mb-1 d-flex">
+                             <div class="user-images mt-3">
+                              <img src="./Assets/images/user-12.jpg" alt="user-1" class="img-fluid rounded-circle" height="50" width="50" />
+                             </div>
+                             <div class=" ms-3  text-white  pe-5">
+                                <img src="./Assets/images/chat-image.jpg" class="im" width="240" height="180" alt="Chat image" >
+                             </div>
+                         </div>
+                         <div class="flex align-itmes-center mb-4 justify-content-between"> 
+                             <div class="gb gk">2:40 PM</div> 
+                         </div>
+                         <div class="user-comment d-flex">
+                             <div class="user-images">
+                              <img src="./Assets/images/user-12.jpg" alt="user-1" class="img-fluid rounded-circle" height="50" width="50" />
+                             </div>
+                             <div class=" ms-3 user-text text-center ps-2 pe-2 mb-1">
+                                 What do you think? Duis aute irure dolor in reprehenderit 🔥
+                             </div>  
+                         </div>
+                         <div class="flex align-itmes-center mb-4 justify-content-between"> 
+                             <div class="gb gk">2:48 PM</div> 
+                         </div>
+                         <div class="user-comment mb-1 d-flex">
+                             <div class="user-images mt-2">
+                              <img src="./Assets/images/user-10.jpg" alt="user-1" class="img-fluid rounded-circle" height="50" width="50" />
+                             </div>
+                             <div class=" ms-3 fg text-white p-3 pe-5">
+                                 Sed euismod nisi porta lorem mollis. Tellus elementum sagittis vitae et leo duis. Viverra justo nec<br> ultrices dui.<br>
+                                 Sed lectus vestibulum mattis ullamcorper velit sed. Ut sem nulla pharetra diam sit amet 🎁
+                             </div>
+                         </div>
+                         <div class="flex align-itmes-center mb-4 justify-content-between"> 
+                             <div class="gb gk">2:55 PM</div> 
+                         </div>
+                         <div class="d-flex justify-content-center mb-4"> 
+                             <div class="gb p-2 fw comment-date"> Tuesday, 20 January </div>
+                          </div>
+                          <div class="user-comment mb-1 d-flex">
+                             <div class="user-images mt-2">
+                              <img src="./Assets/images/user-10.jpg" alt="user-1" class="img-fluid rounded-circle" height="50" width="50" />
+                             </div>
+                             <div class=" ms-3 fg text-white p-3 pe-5">
+                                 Can you join @dominik? https://meet.google.com/haz-r3gt-idj
+                             </div>
+                         </div>
+                         <div class="flex align-itmes-center mb-4 justify-content-between"> 
+                             <div class="gb gk">10:15 AM</div> 
+                         </div>
+                         <div class="user-comment d-flex">
+                             <div class="user-images">
+                              <img src="./Assets/images/user-12.jpg" alt="user-1" class="img-fluid rounded-circle" height="50" width="50" />
+                             </div>
+                             <div class=" ms-3 user-text text-center ps-2 pe-2 mb-1">
+                               typing  <span class="fa fa-ellipsis-h"></span>
+                             </div>  
+                         </div>
+                         <div class="flex align-itmes-center mb-4 justify-content-between"> 
+                             <div class="gb gk">2:48 PM</div> 
+                         </div>
+                         </section>
+                         <section class="bottom-footer">
+                            
+                            <div class="user-message border-top border-bottom text-center p-3">
+                                <div class="d-flex justify-content-between flex wrap">
+                                    <div class=" mt-2 add-btn">
+                                        <span class="fa fa-plus text-white"></span>
+                                    </div>
+                                    <div class="header-form">
+                                        <form class="form-data">
+                                            <label for="action-search" class="label-search">Search</label>
+                                            <input id="action-search" class="form-control form3" type="search" placeholder="Aa" />
+                                           
+                                        </form>
+                                    </div>
+                                    <div class="send-btn mt-1">
+                                        <button class="btn btn-primary ms-4 ms-md-0">Send <span class="fa fa-long-arrow-right"></span></button> 
+                                    </div>
+                                </div>
+                                
+    
+                            </div>
+                            
+                        </section>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        </section>   
+          
+       
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

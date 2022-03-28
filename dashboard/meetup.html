@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="./Assets/css/style.css" />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <section class="main-card-content">
+            <div class="container">
+                <div class="main-header">
+                    <div class="header-title mb-3">
+                        <h1>Discover Meetups ✨</h1>
+                    </div>
+                    <div class="header-fb">
+                        <div class="header-form">
+                            <form class="form-data">
+                                <label for="action-search" class="label-search">Search</label>
+                                <input id="action-search" class="form-control" type="search" placeholder="Search…" />
+                                <button class="fa fa-search" type="submit" aria-label="Search"></button>
+                            </form>
+                        </div>
+                        <div class="add-button">
+                            <button class="btn"><span class="fa fa-plus"></span> <span> Add Meetup</span></button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active mb-3 mb-md-0" id="pills-view-tab" data-bs-toggle="pill" data-bs-target="#pills-view" type="button" role="tab" aria-controls="pills-view" aria-selected="true">View All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link mb-3 mb-md-0" id="pills-onlinee-tab" data-bs-toggle="pill" data-bs-target="#pills-online" type="button" role="tab" aria-controls="pills-online" aria-selected="false">Online</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link mb-3 mb-md-0" id="pills-local-tab" data-bs-toggle="pill" data-bs-target="#pills-local" type="button" role="tab" aria-controls="pills-local" aria-selected="false">Local</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link mb-3 mb-md-0" id="pills-week-tab" data-bs-toggle="pill" data-bs-target="#pills-week" type="button" role="tab" aria-controls="pills-week" aria-selected="false">This Week</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-month-tab" data-bs-toggle="pill" data-bs-target="#pills-month" type="button" role="tab" aria-controls="pills-month" aria-selected="false">This Month</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-follow-tab" data-bs-toggle="pill" data-bs-target="#pills-follow" type="button" role="tab" aria-controls="pills-follow" aria-selected="false">Following</button>
+                    </li>
+                </ul>
+                <!-- <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+          </div> -->
+                <div class="main-card mt-5">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./Assets/images/meetups-thumb-01.jpg" class="img-fluid h-100" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="meetup-text">
+                                            <div class="meet-date text-uppercase">Mon 27 Dec, 2021</div>
+                                            <a href="post-meet.html" class="text-decoration-none text-black">
+                                                <h3 class="meet-tx">Silicon Valley Bootstrapper Breakfast Online for 2021</h3>
+                                            </a>
+                                            <div class="text-sm">
+                                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.
+                                            </div>
+                                            <div class="meet-event">
+                                                <div class="online-btn"><span class="fa fa-video-camera"></span><span> Online Event</span></div>
+                                                <div class="d-flex align-items-center meet-img">
+                                                    <div class="d-flex meet-image">
+                                                        <img src="./Assets/images/user-01.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-04.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-03.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                    </div>
+                                                    <div class="user-number">+22</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./Assets/images/meetups-thumb-02.jpg" class="img-fluid h-100" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="meetup-text">
+                                            <div class="meet-date text-uppercase">Mon 27 Dec, 2021</div>
+                                            <a href="post-meet.html" class="text-decoration-none text-black">
+                                                <h3 class="meet-tx">New York & New Jersey Virtual Retreat 2021</h3>
+                                            </a>
+                                            <div class="text-sm">
+                                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.
+                                            </div>
+                                            <div class="meet-event">
+                                                <div class="online-btn"><span class="fa fa-video-camera"></span><span> Online Event</span></div>
+                                                <div class="d-flex align-items-center meet-img">
+                                                    <div class="d-flex meet-image">
+                                                        <img src="./Assets/images/user-02.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-06.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-03.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                    </div>
+                                                    <div class="user-number">+122</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./Assets/images/meetups-thumb-03.jpg" class="img-fluid h-100" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="meetup-text">
+                                            <div class="meet-date text-uppercase">Wed 29 Dec, 2021</div>
+                                            <a href="post-meet.html" class="text-decoration-none text-black">
+                                                <h3 class="meet-tx">The World of AI and Machine Learning — Open Chat</h3>
+                                            </a>
+                                            <div class="text-sm">
+                                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.
+                                            </div>
+                                            <div class="meet-event">
+                                                <div class="online-btn"><span class="fa fa-video-camera"></span><span> Online Event</span></div>
+                                                <div class="d-flex align-items-center meet-img">
+                                                    <div class="d-flex meet-image">
+                                                        <img src="./Assets/images/user-07.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-04.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-03.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                    </div>
+                                                    <div class="user-number">+12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <img src="./Assets/images/meetups-thumb-04.jpg" class="img-fluid h-100" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="meetup-text">
+                                            <div class="meet-date text-uppercase">Wed 29 Dec, 2021</div>
+                                            <a href="post-meet.html" class="text-decoration-none text-black">
+                                                <h3 class="meet-tx">NYC Code & Coffee 2.0 @ Freehold Brooklyn</h3>
+                                            </a>
+                                            <div class="text-sm">
+                                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.
+                                            </div>
+                                            <div class="meet-event">
+                                                <div class="online-btn"><span class="fa fa-video-camera"></span><span> Online Event</span></div>
+                                                <div class="d-flex align-items-center meet-img">
+                                                    <div class="d-flex meet-image">
+                                                        <img src="./Assets/images/user-07.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-04.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-08.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                    </div>
+                                                    <div class="user-number">+17</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <img src="./Assets/images/meetups-thumb-05.jpg" class="img-fluid h-100" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="meetup-text">
+                                            <div class="meet-date text-uppercase">MON 3 JAN, 2022</div>
+                                            <a href="post-meet.html" class="text-decoration-none text-black">
+                                                <h3 class="meet-tx">Acme Inc. London Meetup: Women in Tech Night</h3>
+                                            </a>
+                                            <div class="text-sm">
+                                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.
+                                            </div>
+                                            <div class="meet-event">
+                                                <div class="online-btn"><span class="fa fa-video-camera"></span><span> Online Event</span></div>
+                                                <div class="d-flex align-items-center meet-img">
+                                                    <div class="d-flex meet-image">
+                                                        <img src="./Assets/images/user-01.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-04.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                    </div>
+                                                    <div class="user-number">+117</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <a href="">
+                                            <img src="./Assets/images/meetups-thumb-06.jpg" class="img-fluid h-100" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="meetup-text">
+                                            <div class="meet-date text-uppercase">THU 6 JAN, 2022</div>
+                                            <a href="post-meet.html" class="text-decoration-none text-black">
+                                                <h3 class="meet-tx">Founder Worldwide - First Meetup of 2022!</h3>
+                                            </a>
+                                            <div class="text-sm">
+                                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.
+                                            </div>
+                                            <div class="meet-event">
+                                                <div class="online-btn"><span class="fa fa-video-camera"></span><span> Online Event</span></div>
+                                                <div class="d-flex align-items-center meet-img">
+                                                    <div class="d-flex meet-image">
+                                                        <img src="./Assets/images/user-01.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-04.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-03.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                    </div>
+                                                    <div class="user-number">+64</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <img src="./Assets/images/meetups-thumb-07.jpg" class="img-fluid h-100" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="meetup-text">
+                                            <div class="meet-date text-uppercase">THU 6 JAN, 2022</div>
+                                            <a href="post-meet.html" class="text-decoration-none text-black">
+                                                <h3 class="meet-tx">NYC Blockchain Network - Monthly 3rd Thursday Meetup</h3>
+                                            </a>
+                                            <div class="text-sm">
+                                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.
+                                            </div>
+                                            <div class="meet-event">
+                                                <div class="online-btn"><span class="fa fa-video-camera"></span><span> Online Event</span></div>
+                                                <div class="d-flex align-items-center meet-img">
+                                                    <div class="d-flex meet-image">
+                                                        <img src="./Assets/images/user-01.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-04.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                    </div>
+                                                    <div class="user-number">+122</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <a href="#">
+                                            <img src="./Assets/images/meetups-thumb-08.jpg" class="img-fluid h-100" />
+                                        </a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="meetup-text">
+                                            <div class="meet-date text-uppercase">FRI 7 JAN, 2022</div>
+                                            <a href="post-meet.html" class="text-decoration-none text-black">
+                                                <h3 class="meet-tx">Build a Personal Brand and Boost Your Career in AI!</h3>
+                                            </a>
+                                            <div class="text-sm">
+                                                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.
+                                            </div>
+                                            <div class="meet-event">
+                                                <div class="online-btn"><span class="fa fa-video-camera"></span><span> Online Event</span></div>
+                                                <div class="d-flex align-items-center meet-img">
+                                                    <div class="d-flex meet-image">
+                                                        <img src="./Assets/images/user-01.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-04.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                        <img src="./Assets/images/user-03.jpg" class="img-fluid rounded-circle user" height="28" width="28" alt="user" />
+                                                    </div>
+                                                    <div class="user-number">+32</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
